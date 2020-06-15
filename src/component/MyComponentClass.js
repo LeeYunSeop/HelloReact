@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import MyComponent from './MyComponent';
 
 class MyComponentClass extends Component {
+  constructor(props) {
+    super(props);
+    console.log('constructor');
+  }
   render() {
     const { name, favoriteNumber, children } = this.props;
     return (
